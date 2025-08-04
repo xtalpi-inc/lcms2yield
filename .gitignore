@@ -1,0 +1,4 @@
+*.pyc
+0.0_*
+model/model/history.txt
+*checkpoint.py*
