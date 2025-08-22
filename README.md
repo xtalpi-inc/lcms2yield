@@ -11,7 +11,7 @@ This repository contains the data and code for the paper **"From Purification to
 - pip package manager
 
 ### Install Dependencies
-
+#### CPU Version Installation
 ```bash
 # Install PyTorch
 pip3 install torch==2.3.0 torchvision==0.18.0 --index-url https://download.pytorch.org/whl/cpu
@@ -25,13 +25,28 @@ pip install torch_geometric==2.5.3 performer_pytorch==1.1.4 rdkit==2023.9.6
 # Install additional dependencies
 pip install pykan==0.2.7 pyyaml==6.0.2 matplotlib==3.9.0 pandas==2.3.2 numpy==1.26.4
 ```
+#### GPU Version Installation (CUDA Acceleration)
+```bash
+# Install PyTorch with CUDA 11.8
+pip3 install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cu118
+
+# Install PyTorch Geometric dependencies
+pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.3.0+cu118.html
+
+# Install main packages
+pip install torch_geometric==2.5.3 performer_pytorch==1.1.4 rdkit==2023.9.6
+
+# Install additional dependencies
+pip install pykan==0.2.7 pyyaml==6.0.2 matplotlib==3.9.0 pandas==2.3.2 numpy==1.26.4
+```
+
 
 ## 📊 Data
 
 This repository includes the following datasets:
 
-- **`data/FDA.csv`**: Contains correction factors and concentration data for FDA-approved molecules
-- **`data/Reaction.csv`**: Contains yield data and correction factors for chemical reactions
+- **`data/FDA.csv`**: Contains correction factors and concentration data for 156 FDA-approved molecules
+- **`data/Reaction.csv`**: Contains yield data and correction factors for 213 chemical reactions
 
 These datasets are used for training and validation of the AI models in this research.
 
