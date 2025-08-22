@@ -10,6 +10,7 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 
+# The code for the graphgps_layer is sourced from the GraphGPS repository. https://github.com/rampasek/GraphGPS/tree/main/graphgps
 from .graphgps_layer.gps_layer import GPSLayer
 
 class SinglePropKANModel(nn.Module): 
