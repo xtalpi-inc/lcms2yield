@@ -7,8 +7,10 @@ This repository contains the data and code for the paper **"From Purification to
 ## 📦 Installation
 
 ### Prerequisites
+- Operating System​​: Ubuntu 20.04.2 LTS (recommended and tested)
 - Python 3.11
 - pip package manager
+- NVIDIA GPU with CUDA support (optional, for GPU acceleration)
 
 ### Install Dependencies
 #### CPU Version Installation
@@ -52,7 +54,7 @@ These datasets are used for training and validation of the AI models in this res
 
 ## 🚀 Quick Start
 
-### Basic Usage
+### Demo
 
 ```python
 from predict import predict_by_smiles_list
