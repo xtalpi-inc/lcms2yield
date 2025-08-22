@@ -1,9 +1,11 @@
+import warnings
+warnings.filterwarnings("ignore")
 import numpy as np
 import torch
 from torch_geometric.loader import DataLoader
-
 from model.uv_model_mc import SinglePropKANModel
 from dataset.dataset import MolDataset
+
 
 def predict_by_smiles_list(SMILES_list, with_std=False, with_fea=False, 
                            model_pth = './model_pth/20250721.pth', 
@@ -97,7 +99,9 @@ def is_number(s):
 if __name__ == '__main__':
     SMILES_list = [ 'CN(N=C1)C=C1CC2(CC(F)(F)C2)NC(CC3=CC(C=C(Br)C=N4)=C4C=C3)C5=C(O)C=CC=N5', 
                     'Nc1[nH]c(=O)nc[c:1]1[N:1]1CSC[C@H]1C(=O)O']
-    preds = predict_by_smiles_list(SMILES_list)
+    res = predict_by_smiles_list(SMILES_list)
+    model_pth = res['model_pth']
+    preds = res['preds']
     print('preds CFs:', preds)
 
     
