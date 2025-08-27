@@ -50,7 +50,6 @@ This repository includes the following datasets:
 - **`data/FDA.csv`**: Contains correction factors and concentration data for 156 FDA-approved molecules
 - **`data/Reaction.csv`**: Contains yield data and correction factors for 213 chemical reactions
 
-These datasets are used for training and validation of the AI models in this research.
 
 ## 🚀 Quick Start
 
