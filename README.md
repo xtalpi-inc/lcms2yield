@@ -4,7 +4,22 @@
 
 This repository contains the data and code for the paper **"From Purification to Prediction: AI-Powered UV Spectral Prediction as a New Paradigm for Yield Quantification in Modern Chemical Synthesis"**.
 
-## 📦 Installation
+## 📊 Data
+
+This repository includes the following datasets:
+- **`data/quantum_chemistry/data.csv`**: The SMILES and quantum chemistry calculated CFs for 22,609 compounds used at pre-training stage
+
+- **`data/experiment/Fine_tuning.csv`**: The SMILES and LCMS/UV-derived experimental CFs for 1,845 compounds used at fine-tuning stage
+
+- **`data/experiment/FDA.csv`**: The SMILES and LCMS/UV-derived experimental CFs for 156 FDA approved drug compounds used for independent benchmark
+
+- **`data/experiment/Reaction.csv`**: The SMILES, LCMS/UV-derived experimental CFs for target products from 213 real-world reactions used for independent benchmark and reaction yields.
+
+
+
+
+
+## 📦 Correction Factor Prediction
 
 ### Prerequisites
 - Operating System​​: Ubuntu 20.04.2 LTS (recommended and tested)
@@ -43,16 +58,6 @@ pip install pykan==0.2.7 pyyaml==6.0.2 matplotlib==3.9.0 pandas==2.3.2 numpy==1.
 ```
 
 
-## 📊 Data
-
-This repository includes the following datasets:
-
-- **`data/FDA.csv`**: Contains correction factors and concentration data for 156 FDA-approved molecules
-- **`data/Reaction.csv`**: Contains yield data and correction factors for 213 chemical reactions
-
-
-## 🚀 Quick Start
-
 ### Demo
 
 ```python
@@ -74,7 +79,7 @@ print('Predicted CFs:', preds)
 ```
 
 
-## 🔧 API Reference
+### 🔧 API Reference
 
 ### `predict_by_smiles_list(smiles_list)`
 Predict correction factors for a list of SMILES strings.
