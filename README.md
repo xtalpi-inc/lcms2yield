@@ -11,9 +11,9 @@ This repository includes the following datasets:
 
 - **`data/experiment/Fine_tuning.csv`**: The SMILES and LCMS/UV-derived experimental CFs for 1,845 compounds used at fine-tuning stage
 
-- **`data/experiment/FDA.csv`**: The SMILES and LCMS/UV-derived experimental CFs for 156 FDA approved drug compounds used for independent benchmark
+- **`data/experiment/FDA.csv`**: The SMILES and LCMS/UV-derived experimental CFs for 144 FDA approved drug compounds used for independent benchmark
 
-- **`data/experiment/Reaction.csv`**: The SMILES, LCMS/UV-derived experimental CFs for target products from 213 real-world reactions used for independent benchmark against calibrated reaction yields.
+- **`data/experiment/Reaction.csv`**: The SMILES, LCMS/UV-derived experimental CFs for target products from 178 real-world reactions used for independent benchmark against calibrated reaction yields.
 
 - **`data/experiment/Isolated_Yields_Suzuki_34.csv`**: The SMILES, LCMS/UV-derived experimental CFs for target products from 34 Suzuki reactions used for independent benchmark against isolated reaction yields.
   
