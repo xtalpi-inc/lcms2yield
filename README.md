@@ -4,6 +4,9 @@
 
 This repository contains the data and code for the paper **"From Purification to Prediction: AI-Powered UV Spectral Prediction as a New Paradigm for Yield Quantification in Modern Chemical Synthesis"**.
 
+## Keywords
+ **`AI-for-Science, Quantum-Chemistry-Computing, Deep-Learning, Pre-training and Fine-tuning, Reaction-Yield`**
+
 ## 📊 Data
 
 This repository includes the following datasets:
