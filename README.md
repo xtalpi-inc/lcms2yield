@@ -2,10 +2,10 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
-This repository contains the data and code for the paper **"From Purification to Prediction: AI-Powered UV Spectral Prediction as a New Paradigm for Yield Quantification in Modern Chemical Synthesis"**.
+This repository contains the data and code for the paper **"AI-Predicted Full-Spectrum UV Correction Factors: An Analyte-Standard-Free Framework for Reaction Yield Quantification"**.
 
 ## Keywords
- **`AI-for-Science, Quantum-Chemistry-Computing, Deep-Learning, Pre-training and Fine-tuning, Reaction-Yield`**
+ **`AI-for-Science, Quantum-Chemistry-Computing, Deep-Learning, Pre-training and Fine-tuning, Reaction-Yield`**，JACS Au, 2026, https://doi.org/10.1021/jacsau.6c00812
 
 ## 📊 Data
 
